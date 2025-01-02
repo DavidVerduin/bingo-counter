@@ -1,0 +1,5 @@
+@mixin constants {
+  --header-height: 4.25rem;
+  --main-height: calc(100vh - var(--header-height));
+
+}

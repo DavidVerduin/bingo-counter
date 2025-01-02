@@ -1,0 +1,19 @@
+.login-container {
+  width: 100%;
+  height: var(--main-height);
+  .login-card {
+    width: 100%;
+    max-width: 40rem;
+    margin: auto;
+    border: 1px solid var(--color-primary);
+    border-radius: 0.5rem;
+    .button-container {
+      width: calc(100% - 4rem);
+      margin: 2rem;
+      .button {
+        margin-top: 1rem;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<header class="header {{scrolling ? 'on-scroll' : ''}}" id="header">
+  <nav class="navbar container">
+     <a href="#" class="brand">{{title}}</a>
+     <div class="burger {{burgerActive ? 'is-active' : ''}}" id="burger" (click)="burgerActive = !burgerActive">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+     </div>
+     <div class="menu {{burgerActive ? 'is-active' : ''}}" id="menu">
+        <ul class="menu-inner">
+          @for (link of links; track $index) {
+            <li class="menu-item"><a [href]="link.href" class="menu-link">{{link.name}}</a></li>
+          }
+        </ul>
+     </div>
+     @if (menuLink) {
+      <a [href]="menuLink.href" class="menu-block">{{menuLink.name}}</a>
+     }
+  </nav>
+</header>

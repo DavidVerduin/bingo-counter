@@ -1,0 +1,8 @@
+<div class="home-container">
+  <!-- @for (item of cardList; track $index) {
+    <app-hover-card [title]="item.title" [imgUrl]="item.imgUrl" [description]="item.description" [link]="item.link" [extra]="item.extra"></app-hover-card>
+  } -->
+  @for (item of cardDateList; track $index) {
+    <app-hover-card-date [title]="item.title" [subTitle]="item.subTitle" [date]="item.date" [click]="item.click" [index]="$index"></app-hover-card-date>
+  }
+</div>
